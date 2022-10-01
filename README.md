@@ -49,3 +49,25 @@ if still not work
 pip install ipython
 pip install --upgrade "ipython[all]"
 ```
+
+To Stop the container
+
+```docker stop <container_name>```
+To remove the unnecessary contaners
+docker system prune
+
+To build the image from the Dockerfile
+
+```docker build -t review_scraper:v1.2 .```
+
+to see the images
+
+``` docker images``
+
+Tag to your local image
+
+```docker tag review_scraper:v1.1 rajesh222/review_scraper:v1.1```
+
+to push you changes 
+
+```docker push rajesh222/review_scraper:v1.1```
